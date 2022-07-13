@@ -1,22 +1,22 @@
-const Employee = require('../lib/Engineer');
+const Engineer = require('../lib/Engineer');
 
 test("Set engineer's GitHub username", () => {
-	const getGit = 'tydomx';
-	const engineer = new Engineer('Michael', 12345, 'test@gmail.com', getGit);
+	const getUser = 'tydomx';
+	const engineer = new Engineer('Michael', 12345, 'test@gmail.com', getUser);
 
-	expect(engineer.gitHubUser).toBe(getGit);
+	expect(engineer.gitHub).toBe(getUser);
 });
 
 test('Get GitHub account using getGitHub()', () => {
-	const getGit = 'tydomx';
-	const engineer = new Engineer('Michael', 12345, 'test@gmail.com', getGit);
+	const getUser = 'tydomx';
+	const engineer = new Engineer('Michael', 12345, 'test@gmail.com', getUser);
 
-	expect(engineer.getGitHub).tobe(getGit);
+	expect(engineer.gitHub).toBe(getUser);
 });
 
 test('Use getRole() to return "Engineer" as role', () => {
 	const role = 'Engineer';
-	const engineer = new Engineer('Michael', 12345, 'test@gmail.com');
+	const engineer = new Engineer('Michael', 12345, 'test@gmail.com', 'tydomx');
 
 	expect(engineer.getRole()).toBe(role);
 });
