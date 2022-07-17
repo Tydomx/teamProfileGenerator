@@ -4,6 +4,12 @@ body {
 	overflow-x: hidden !important;
 }
 
+:root {
+	--main-color: rgba(5, 156, 96, 0.9);
+	--secondary-color: rgb(139, 221, 172);
+	--background: rgb(191, 191, 191);
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -11,7 +17,7 @@ body {
 }
 
 .title-bar {
-	background-color: rgba(5, 139, 156, 0.9);
+	background-color: var(--main-color);
 	width: 100%;
 	color: #ffffff;
 	height: 20vh;
@@ -21,21 +27,25 @@ body {
 }
 
 h1 {
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Poppins', cursive;
 	font-size: 8vw;
 }
 
 p {
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	position: relative;
 	left: 12px;
 }
 
 h2 {
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	position: relative;
 	font-size: 17px;
 	left: 12px;
+}
+
+a {
+	text-decoration: none;
 }
 
 .card-container {
@@ -51,14 +61,14 @@ h2 {
 	width: 250px;
 	height: 34vh;
 	margin-bottom: 5vh;
-	box-shadow: 2px 5px 5px rgb(5, 94, 105);
+	box-shadow: 2px 5px 5px rgb(0, 79, 20);
 	border-top-left-radius: 10px;
-	background-color: rgb(241, 248, 248);
+	background-color: var(--background);
 }
 
 .team-member-card-top {
-	background-color: rgb(139, 216, 221);
-	border: 2px solid rgb(139, 216, 221);
+	background-color: var(--secondary-color);
+	border: 2px solid var(--secondary-color);
 	border-top-left-radius: 10px;
 	width: 246px;
 }
