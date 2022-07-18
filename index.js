@@ -15,6 +15,7 @@ const engineerQuestions = require('./lib/Engineer-questions');
 const internQuestions = require('./lib/Intern-questions');
 const htmlTemp = require('./lib/html-template');
 
+// array to hold team members
 let teamProfileArr = [];
 
 // function writes output HTML file
